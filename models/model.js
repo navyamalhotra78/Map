@@ -5,7 +5,8 @@ const stateInfoSchema = new mongoose.Schema({
   cuisine: String,
   art: String,
   music: String,
-  dance: String
+  dance: String,
+  imageURL: Array,
 }, { collection: 'States' });
 
 module.exports = mongoose.model('StateInfo', stateInfoSchema);

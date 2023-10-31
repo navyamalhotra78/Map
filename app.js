@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const ejs = require('ejs'); // Import EJS
+const ejs = require('ejs');
 const mapRoutes = require("./routes/map.js");
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
