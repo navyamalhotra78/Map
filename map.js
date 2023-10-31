@@ -173,67 +173,16 @@
     ];
 
     function handleStateClick(event) {
-        var stateId = event.target.dataItem.dataContext.id;
-    
-        // Create the pop-up content with clickable links
-        var popupContent = document.createElement('div');
-        popupContent.innerHTML = `
-            ${stateId} Information:
-            - <a href="/statePage/${stateId}" class="state-link" data-state="${stateId}">Cuisine</a>
-            - <a href="/statePage/${stateId}" class="state-link" data-state="${stateId}">Art</a>
-            - <a href="/statePage/${stateId}" class="state-link" data-state="${stateId}">Music</a>
-        `;
-        
-    
-        // Add click event listeners to the links
-        var links = popupContent.getElementsByClassName('state-link');
-        for (var i = 0; i < links.length; i++) {
-            links[i].addEventListener('click', function(event) {
-                event.preventDefault(); // Prevent the default link behavior
-    
-                // Get the state and link information from the clicked link
-                var stateId = event.target.getAttribute('data-state');
-                var linkHref = event.target.getAttribute('href');
-    
-                // Update the URL with the state information
-                window.location.href = linkHref + '?state=' + stateId;
-            });
-        }
-    
-        // Create a custom modal for displaying the pop-up content
-        var modal = document.createElement('div');
-        modal.className = 'modal';
-        modal.innerHTML = popupContent.outerHTML;
-    
-        // Append the modal to the document
-        document.body.appendChild(modal);
-    
-        // Use CSS to style the modal (you can define a CSS class for this)
-        // For example:
-        // .modal {
-        //   display: none;
-        //   position: fixed;
-        //   top: 0;
-        //   left: 0;
-        //   width: 100%;
-        //   height: 100%;
-        //   background-color: rgba(0, 0, 0, 0.5);
-        //   z-index: 9999;
-        //   display: flex;
-        //   align-items: center;
-        //   justify-content: center;
-        // }
-    
-        // Show the modal
-        modal.style.display = 'block';
+        var stateName = event.target.dataItem.dataContext.name;
+        console.log(stateName);
+
+        var linkHref = "/statePage/" + stateName;
+        window.open(linkHref, '_blank');
     }
     
-      
-      
-
     // Configure series tooltip
     var polygonTemplate = polygonSeries.mapPolygons.template;
-    polygonTemplate.tooltipText = "{name}: {value}";
+    polygonTemplate.tooltipText = "{name}";
     polygonTemplate.nonScalingStroke = true;
     polygonTemplate.strokeWidth = 0.5;
 

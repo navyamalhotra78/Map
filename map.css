@@ -1,9 +1,31 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-  
-  #chartdiv {
-    width: 100%;
-    height: 500px
-  }
-  
+
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZtR-N6V2D1o07gDVj0eFnOaMFxWsjLjw85Q&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1; /* Send the pseudo-element to the back */
+}
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+h2{
+  padding-left: 60px;
+  color:darkgreen;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

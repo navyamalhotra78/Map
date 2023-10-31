@@ -4,8 +4,6 @@ const app = express();
 const path = require('path');
 const ejs = require('ejs'); // Import EJS
 app.set('view engine', 'ejs');
-// Serve static files (CSS and JavaScript) from the root directory
-// Serve static files (CSS and JavaScript) from the root directory
 app.use(express.static(__dirname));
 
 
