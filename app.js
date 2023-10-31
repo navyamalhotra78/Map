@@ -7,10 +7,6 @@ const mapRoutes = require("./routes/map.js");
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
 
-
-// Import your Mongoose model
-const model = require('./model'); 
-
 // Connect to your MongoDB database
 const mongoURI = 'mongodb://localhost:27017/REVA';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
