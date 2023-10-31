@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Connect to your MongoDB database
-const mongoURI = 'mongodb://localhost:27017/REVA';
+const mongoURI = 'mongodb+srv://Navya:gHYqmhdmKbevexxD@cluster0.jeuaqbk.mongodb.net/REVA';
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Handle connection errors

@@ -7,7 +7,7 @@ router.get("/", (req,res) => {
 	res.render("map");
 });
 router.get('/statePage/:stateName', async (req, res) => {
-    const stateName = req.params.stateName;
+    const stateName = req.params.stateName.trim();
     try {
         // Retrieve data for the given stateName from your MongoDB database
         const stateData = await model.findOne({ stateName });
