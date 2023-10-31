@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 // Import your Mongoose model
-const model = require('../model'); 
+const model = require('../models/model');
 
 router.get("/", (req,res) => {
 	res.render("map");
