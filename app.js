@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const app = express();
 const path = require('path');
 const ejs = require('ejs'); // Import EJS
+const mapRoutes = require("./routes/map.js");
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
 
@@ -21,36 +22,8 @@ db.once('open', () => {
   console.log('Connected to MongoDB');
 });
 
-app.get('/', (req, res) => {
-    res.render('map'); 
-  });
-  
-// Define a route for handling state pages
-app.get('/statePage/:stateName', async (req, res) => {
-    const stateName = req.params.stateName;
 
-    try {
-        // Retrieve data for the given stateName from your MongoDB database
-        const stateData = await model.findOne({ stateName });
-
-        if (stateData) {
-            // Render the single 'statePage.ejs' template with the 'stateData' for the specific state
-            res.render('statePage', { stateData });
-        } else {
-            // Handle the case where the state is not found in your database
-            res.status(404).send('State not found');
-        }
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Internal Server Error');
-    }
-});
-
-
-
-// Other routes and middleware can be defined as needed
-
-// Start your web server
+app.use(mapRoutes);
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
