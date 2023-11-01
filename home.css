@@ -4,15 +4,34 @@
     font-family: 'Adamina', serif;
 }
 
+.video-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 79vh; /* Set the height of the video container */
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row; /* Change to row */
+    justify-content: space-between; /* Adjust spacing between EKTA and chart */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Adjust the padding as needed */
+}
+
+#chartdiv {
+    width: 50%; /* Set the width for the chart */
+    height: 100%; /* Adjust the height as needed */
+}
+
+/* Additional styles for buttons on top if needed */
+
 .hidden-item {
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
-  
-.video-container {
-    position: relative;
-    width: 100%;
-}
+
 
 #background-video {
     position: absolute;

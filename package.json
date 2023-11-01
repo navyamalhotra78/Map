@@ -1,16 +1,16 @@
 {
-  "name": "ticket-management-system",
+  "name": "ekta",
   "version": "1.0.0",
-  "description": "A ticket management system in which faculty can raise a ticket if they are facing any issues with the maintenance and utilities and it will be assigned to the staff who will resolve it ASAP",
+  "description": "A website that showcases the rich cultural heritage and traditions of India.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js -e html,css,js,ejs"
   },
   "keywords": [
-    "Ticket",
-    "Management",
-    "System"
+    "cultural",
+    "heritage",
+    "India"
   ],
   "author": "Team",
   "license": "ISC",

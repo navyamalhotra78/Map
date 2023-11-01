@@ -191,11 +191,13 @@ polygonSeries.data = [
   }
 ];
     function handleStateClick(event) {
+      
         var stateName = event.target.dataItem.dataContext.name;
         console.log(stateName);
 
         var linkHref = "/statePage/" + stateName;
-        window.open(linkHref, '_blank');
+        window.open(linkHref, '_blank','width=800,height=600,scrollbars=yes,resizable=yes,toolbar=no,menubar=no,status=no,location=no');
+       
     }
     
     // Configure series tooltip
@@ -203,9 +205,11 @@ polygonSeries.data = [
     polygonTemplate.tooltipText = "{name}";
     polygonTemplate.nonScalingStroke = true;
     polygonTemplate.strokeWidth = 0.5;  
+    
 
     // Create hover state and set an alternative fill color
     let hs = polygonTemplate.states.create("hover");
+
     hs.properties.fill = am4core.color("silver");
 
     polygonTemplate.events.on("hit", handleStateClick);
