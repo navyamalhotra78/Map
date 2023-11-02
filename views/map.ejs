@@ -3,27 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ekta</title>
-    <link rel="stylesheet" href="../assets/css/map.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<style>
+  .hidden-nav {
+      display: none;
+  }
+</style>
 </head>
 <body>
-    <div id="background-container">
+    <div class="video-container">
         <video id="background-video" autoplay loop muted>
-            <source src="../bgdarker.mp4" type="video/mp4">
+            <source src="bgdarker.mp4" type="video/mp4">
         </video>
-    </div>
-    <div class="header-container">
-        <p class="header">EKTA</p>
-        <p class="tagline">A digital Odessey of India's diverse heritage and culture</p>
-    </div>
-    <br>
-    <br>
-    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <div class="header-container">
+          <p class="header">EKTA</p>
+          <p class="tagline">A digital Odessey of India's diverse heritage and culture</p>
+      </div>
+      <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/maps.js"></script>
     <script src="https://www.amcharts.com/lib/4/geodata/india2019High.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
     <div id="chartdiv"></div>
     <script src="../assets/js/map.js"></script>
+    </div>
+
+    <div class="section2">
+      <p class="journey">~ Welcome to the journey of a lifetime ~</p>
+      <div class="container">
+        <div class="col">
+            <a href=""><p class="info">Local Handicrafts</p></a>
+        </div>
+        <div class="col">
+            <a href=""><p class="info">Authentic Cuisine</p></a>
+        </div>
+        <div class="col">
+            <a href=""><p class="info">Classical Dance & Music</p></a>
+        </div>
+    </div>
+
+    <svg class="arrows">
+      <path class="a1" d="M0 0 L30 32 L60 0"></path>
+      <path class="a2" d="M0 20 L30 52 L60 20"></path>
+      <path class="a3" d="M0 40 L30 72 L60 40"></path>
+    </svg>
+
+    </div>
+
+    <div class="section3">
+      <p class="heading3">Explore</p>
+      <div class="container">
+        <div class="column">
+            <img src="crafts.png" alt="Image 1" class="s3">
+            <a href=""><p class="info">Local Handicrafts</p></a>
+        </div>
+        <div class="column">
+            <img src="food.jpg" alt="Image 2" class="s3">
+            <a href=""><p class="info">Authentic Cuisine</p></a>
+        </div>
+        <div class="column">
+            <img src="dance.jpg" alt="Image 3" class="s3">
+            <a href=""><p class="info">Classical Dance & Music</p></a>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

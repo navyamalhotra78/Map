@@ -21,9 +21,11 @@
 }
 
 #chartdiv {
-    width: 50%; /* Set the width for the chart */
-    height: 100%; /* Adjust the height as needed */
-}
+    width: 50%;
+    height: 500px;
+    margin-left:625px;
+    z-index: 1;
+  }
 
 /* Additional styles for buttons on top if needed */
 
@@ -42,89 +44,6 @@
     opacity: 0.5;
 }
 
-.navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    margin-bottom: 0; 
-    padding: 0; 
-    background:transparent;
-    height: 100px;
-}
-
-.navbar-nav {
-    margin-left: 30px;
-    margin-right: 150px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center; 
-}
-
-.navbar-nav .nav-link {
-    color: black; /* Adjust the alpha value for text color */
-    font-weight: normal;
-    text-decoration: none;
-    transition: all 0.3s;
-    font-size: 20px;
-    padding: 0 50px;
-}
-
-.navbar-nav .nav-item:hover .nav-link {
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for hover color */
-}
-
-
-.custom-btn {
-    background: linear-gradient(to right, #022d03, #ffffff, #aa4801); /* Adjust colors as needed */
-    color: black !important;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.custom-btn:hover {
-    background: linear-gradient(to right, #022d03, #ffffff, #aa4801); /* Adjust colors for hover effect */
-}
-
-
-.nav-item img {
-    background-color: rgba(255, 255, 255, 0.3); /* Adjust the alpha value for transparency */
-    padding: 5px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle drop shadow */
-    color: black; /* Text color for the logo */
-}
-
-
-.header{
-    text-align: center;
-    margin-top: 70px;
-    color: black;
-    font-size: 200px;
-}
-
-.tab {
-    background: linear-gradient(to right, #022d03, #ffffff, #aa4801); /* Adjust colors as needed */
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-image: none;
-    border-radius: 5px;
-}
-
-.tab:hover {
-    background: linear-gradient(to right, #022d03, #ffffff, #aa4801); /* Adjust colors for hover effect */
-}
-
-
-li{
-    padding: 0 5px;
-}
 
 .section2{
     background-image: url(sec2final.jpg);
@@ -260,3 +179,28 @@ a:hover{
    height: 170px;
    width: 250px;
 }
+
+.header-container {
+    position: absolute;
+    top: 10%; 
+    left: 40px; 
+    z-index: 1; 
+  }
+  
+  .header {
+    color: white; 
+    font-size: 200px;
+    font-weight: bold; 
+    line-height: 0.3; 
+    margin-bottom: 80px;
+    margin-top: 200px;
+  }
+  
+  
+  
+  .tagline {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -20px;
+  }

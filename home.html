@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
-
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <style>
   .hidden-nav {
       display: none;
@@ -19,48 +19,18 @@
 <body>
     <div class="video-container">
         <video id="background-video" autoplay loop muted>
-            <source src="bgfinal.mp4" type="video/mp4">
+            <source src="bgdarker.mp4" type="video/mp4">
         </video>
-        <nav class="navbar navbar-expand-lg"  id="myNavbar">
-            <div class="container-fluid">
-          
-              <!-- Toggle button for small screens -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          
-              <!-- Navigation links in the centre -->
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <button class= "tab hidden-item"><a class="nav-link" href="#">Storytelling</a></button>
-                  </li>
-                  <li class="nav-item">
-                    <button class="tab hidden-item"><a class="nav-link" href="#">Cuisine</a></button>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <img src="finallogo.png" alt="#" width="50" height="50" class="d-inline-block align-text-top hidden-item">
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <button class="tab hidden-item"><a class="nav-link" href="#">Crafts</a></button>
-                  </li>
-                  <li class="nav-item">
-                    <button class="tab hidden-item"><a class="nav-link" href="#">Music & Dance</a></button>
-                  </li>
-                  
-                </ul>
-              
-                <div class="d-flex">
-                  <button class="custom-btn btn-success mx-2 hidden-item">Sign Up</button>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div>
-            <p class="header">EKTA</p>
-          </div>
+        <div class="header-container">
+          <p class="header">EKTA</p>
+          <p class="tagline">A digital Odessey of India's diverse heritage and culture</p>
+      </div>
+      <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/india2019High.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <div id="chartdiv"></div>
+    <script src="../assets/js/map.js"></script>
     </div>
 
 
